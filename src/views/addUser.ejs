@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add User</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header><%- include('../views/partial/nav'); %></header>
+    <div class="form-users">
+      <form action="/create-user" method="POST">
+        <fieldset>
+          <legend>Form add users</legend>
+          <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" />
+          </div>
+          <div class="input-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" />
+          </div>
+          <div class="input-group">
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone" />
+          </div>
+          <div>
+            <button class="button">save</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
